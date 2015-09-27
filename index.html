@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chandler Childs</title>
+<meta charset="UTF-8">
+<link href="/style.css" rel="stylesheet">
+
+<!-- import jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
+<!-- write script to toggle class on scroll -->
+<script>
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 105){  
+        $('div.name_header').addClass("sticky");
+    }
+    else{
+        $('div.name_header').removeClass("sticky");
+    }
+});
+</script>
+
+<style type="text/css">
+
+	body {
+		background-color: #f5f1f1;
+		font-family: "Veranda", Veranda, sans-serif;
+	}
+
+	article {
+
+		background-color: #fefefe;
+		width: 60%;
+		box-shadow: 0px 0px 25px -3px black;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 80px;
+		margin-top: 35px;
+	}
+
+	.name_header {
+
+		font-size: 2em;
+
+		// set animation
+        //    -webkit-transition: all 0.4s ease;
+        //    transition: all 0.4s ease;
+	}
+
+	.name_header.sticky {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 50px;
+		background-color: #fefefe;
+		text-align: left;
+		box-shadow: 0 0 25px -3px black;
+		padding-left: calc(20% + 5px);
+		padding-top: 10px;
+
+	}
+
+
+</style>
+
+</head>
+
+<body>
+<header></header>
+
+<nav></nav>
+
+<article>
+	<section>
+		<div class="name_header"> Chandler Childs </div>
+		<p>400 S 1450 E, Provo, Ut 84606 • chandler.childs@gmail.com • 801.709.0307</p>
+	</section>
+
+
+	<section>
+		<h2>Education</h2>
+		<hr />
+		<ul>
+			<li>Timpview High School</li>
+			<li>Brigham Young University</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Skills</h2>
+		<hr />
+		<ul>
+			<li>Programming</li>
+			<li>Problem Solving</li>
+			<li>People Skills</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Work Experience</h2>
+		<hr />
+		<section>
+			<h3>BYU Museum of Art</h3> - Early Morning Custodial
+			<p>July 2008 - May 2009 / August 2011 - Present <br/>
+			   I learned discipline waking up every day, following directions in variety of custodial responsibilities. </p>
+		</section>
+
+		<section>
+			<h3>BYU Department of Life Sciences</h3> - Unpaid Research Assistant
+			<p>March 2012 - Present <br/>
+				I run experiments and maintain a sterile environment, pipetting and running qPCR on neural cells. </p>
+		</section>
+	</section>
+
+
+	<section>
+		<h2>Volunteer Experience</h2>
+		<hr />
+		<section>
+			<h3>LDS Missionary</h3> - Milwaukee, Wisconsin
+			<p>July 2009 – July 2011 <br /> 
+			Relevant assignments: Leadership positions, training of new missionaries, and assigned to serve for six months in mission office. </p>
+		</section>
+	</section>
+
+
+	<section>
+		<h2>Other Achievements</h2>
+		<hr />
+		Eagle Scout Award
+	</section>
+
+
+	<section>
+		<h2>References</h2>
+		<hr />
+		Upon Request
+	</section>
+
+
+</article>
+
+
+
+</body>
+</html>
