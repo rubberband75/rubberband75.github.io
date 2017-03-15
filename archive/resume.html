@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chandler Childs</title>
+    <link href="assets/style.css" rel="stylesheet">
+
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+    integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+    crossorigin="anonymous"></script>
+
+    <!-- Compressed CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.min.css">
+    <!-- Compressed JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/foundation.min.js"></script>
+  </head>
+  <body>
+
+    <div class="container">
+
+
+      <ul class="accordion" data-accordion data-allow-all-closed="true">
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title">Accordion 1</a>
+          <div class="accordion-content" data-tab-content>
+            I would start in the open state, due to using the `is-active` state class.
+          </div>
+        </li>
+      </ul>
+
+      <br><hr><br>
+
+      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+        <ul class="orbit-container">
+          <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
+          <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
+          <li class="is-active orbit-slide">
+            <div>
+              <h3 class="text-center">1You can also throw some text in here!</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde harum rem, beatae ipsa consectetur quisquam. Rerum ratione, delectus atque tempore sed, suscipit ullam, beatae distinctio cupiditate ipsam eligendi tempora expedita.</p>
+              <h3 class="text-center">This Orbit slide has chill</h3>
+            </div>
+          </li>
+          <li class="orbit-slide">
+            <div>
+              <h3 class="text-center">2You can also throw some text in here!</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde harum rem, beatae ipsa consectetur quisquam. Rerum ratione, delectus atque tempore sed, suscipit ullam, beatae distinctio cupiditate ipsam eligendi tempora expedita.</p>
+              <h3 class="text-center">This Orbit slide has chill</h3>
+            </div>
+          </li>
+          <li class="orbit-slide">
+            <div>
+              <h3 class="text-center">3You can also throw some text in here!</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde harum rem, beatae ipsa consectetur quisquam. Rerum ratione, delectus atque tempore sed, suscipit ullam, beatae distinctio cupiditate ipsam eligendi tempora expedita.</p>
+              <h3 class="text-center">This Orbit slide has chill</h3>
+            </div>
+          </li>
+          <li class="orbit-slide">
+            <div>
+              <h3 class="text-center">4You can also throw some text in here!</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde harum rem, beatae ipsa consectetur quisquam. Rerum ratione, delectus atque tempore sed, suscipit ullam, beatae distinctio cupiditate ipsam eligendi tempora expedita.</p>
+              <h3 class="text-center">This Orbit slide has chill</h3>
+            </div>
+          </li>
+        </ul>
+        <nav class="orbit-bullets">
+         <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+         <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+         <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+         <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+       </nav>
+      </div>
+
+
+
+    </div>
+
+    <script>
+      $(document).foundation();
+    </script>
+
+  </body>
+</html>
