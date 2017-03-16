@@ -4,11 +4,11 @@
 	$message = $_POST["message"];
 
 	$EmailTo = "rubberband75@gmail.com";
-	$Subject = "New Message Received";
+	$Subject = "RESUME CONTACT";
 
 	// prepare email body text
 
-	$Body .= "Name: ";
+	$Body = "Name: ";
 	$Body .= $name;
 	$Body .= "\n";
 
