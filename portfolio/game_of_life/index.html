@@ -17,7 +17,7 @@
       display: flex;
       justify-content: space-around;
       position: absolute;
-      width: 300px;
+      width: 550px;
       min-height: 40px;
       background-color: rgba(128, 128, 128, 0.5);
       border: rgba(223, 223, 223, 0.75) 5px solid;
@@ -81,13 +81,25 @@
 
 <body>
   <div class="controllBox" id="controllBox">
-    <div style="width: 70%">
+    <div style="width: 40%">
       <p style="margin: 0;">Resolution</p>
       <input type="range" min="1" max="150" value="27" class="slider" id="myRange">
     </div>
 
-    <div style="width: 20%;">
-      <div id='resetButton' onclick="drawNewCanvas()">Reset</div>
+    <div>
+      <div id='resetButton' onclick="clearGrid()">Clear</div>
+    </div>
+
+    <div>
+      <div id='resetButton' onclick="randomize()">Randomize</div>
+    </div>
+
+    <div>
+      <div id='resetButton' onclick="toggleGame()">Pause</div>
+    </div>
+
+    <div>
+      <div id='resetButton' onclick="stepGeneration()">Step</div>
     </div>
 
   </div>
