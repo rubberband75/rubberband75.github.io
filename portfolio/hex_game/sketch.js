@@ -2,7 +2,7 @@ let drawUpdate;
 let tHeight = Math.sqrt(3) / 2;
 let gridStrokeWeight = 2;
 
-let sideLength = 25.0;
+let sideLength = 15.0;
 let gridHeight;
 let gridWidth;
 
@@ -15,10 +15,7 @@ function setup() {
     drawGrid();
     initializeHexGrid(gridHeight, gridWidth);
 
-    insertHexGrid(1, 1);
-    insertHexGrid(-1, -1);
-    insertHexGrid(2, 0);
-    insertHexGrid(1, -1);
+    setStartPattern();
 
     // randomize();
 }
@@ -240,4 +237,56 @@ function randomize() {
         }
     }
     drawUpdate = true;
+}
+
+function setStartPattern() {
+    pattern = [
+        [ 1,  1],
+        [-1, -1],
+        [-1,  1],
+        [ 1, -1],
+        [ 2,  0],
+        [-2,  0],
+        [ 3,  3],
+        [-3, -3],
+        [-3,  3],
+        [ 3, -3],
+        [ 6,  0],
+        [-6,  0],
+    ];
+
+    pattern2 = [
+        [ 4,  4],
+        [-4, -4],
+        [-4,  4],
+        [ 4, -4],
+        [ 8,  0],
+        [-8,  0],
+
+        [ 2,  4],
+        [-2, -4],
+        [-5,  3],
+        [ 5, -3],
+        [ 7,  1],
+        [-7,  -1],
+
+        [ 0,  4],
+        [ 6,  2],
+        [ 6, -2],
+        [ 0, -4],
+        [-6, -2],
+        [-6,  2],
+
+        [-2,  4],
+        [ 5,  3],
+        [ 7, -1],
+        [ 2, -4],
+        [-5, -3],
+        [-7,  1],
+    ]
+
+    for (let i = 0; i < pattern.length; i++) {
+        insertHexGrid(pattern[i][0], pattern[i][1])
+    }
+
 }
