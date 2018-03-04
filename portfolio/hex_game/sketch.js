@@ -6,7 +6,7 @@ let sideLength = 15.0;
 let gridHeight;
 let gridWidth;
 
-let running = false;
+let running = true;
 
 let grid;
 
